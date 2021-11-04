@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Video Caller</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="content">
+            <h1 class="app-title">Video Caller App</h1>
+            <div class="videobox">
+                <video autoplay class="local-vid"></video>
+                <video autoplay class="remote"></video>
+            </div>
+            <div class="controls">
+                <div class="webcam-controls">
+                    <button class="start">start webcam</button>
+                    <button class="end">end webcam</button>
+                </div>
+                <div class="user-controls">
+                    <div class="tabs">
+                        <button class="make">get call link</button>
+                        <button class="join">add call link</button>
+                    </div>
+                    <div class="tab-pages">
+                        <div class="make-page">
+                            <p class="instructions">To make a video call, copy the following link and send it to the remote user:</p>
+                            <div class="desc">
+                                <iframe name="local-desc" frameborder="0"></iframe>
+                                <button class="copy">copy</button>
+                            </div>
+                        </div>
+                        <div class="join-page">
+                            <p class="instructions">Add remote user's details here:</p>
+                            <div class="desc">
+                                <iframe name="remote-desc" frameborder="0"></iframe>
+                                <button class="startCall">start call</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
